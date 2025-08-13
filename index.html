@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassie Harding - Online Support and Assistance</title>
+    <!-- Use Tailwind CSS for a modern, responsive design -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #4B5563; /* Tailwind's gray-600 */
+        }
+        .text-custom-brown {
+            color: #6B4E3E;
+        }
+        .bg-custom-brown {
+            background-color: #6B4E3E;
+        }
+        .loading-dots {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 20px;
+        }
+        .loading-dots span {
+            animation: bounce 1.4s infinite ease-in-out both;
+            background-color: #6B4E3E;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            margin: 0 4px;
+        }
+        .loading-dots span:nth-child(1) { animation-delay: -0.32s; }
+        .loading-dots span:nth-child(2) { animation-delay: -0.16s; }
+        @keyframes bounce {
+            0%, 80%, 100% { transform: scale(0); }
+            40% { transform: scale(1.0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+            <div class="text-2xl font-bold text-custom-brown">Kassie Harding</div>
+            <a href="#contact" class="bg-custom-brown text-white py-2 px-4 rounded-full font-medium hover:bg-opacity-90 transition-colors">
+                Contact Me
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="bg-white py-20 px-4 sm:px-6 lg:px-8">
+            <div class="container mx-auto flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2 text-center md:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-custom-brown mb-4">
+                        Online Support and Assistance
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-700 leading-relaxed mb-6">
+                        Feeling overwhelmed by everything on your plate? I am Kassandra, your online personal assistant. I can help you manage your calendar, organize your tasks, and take care of the day-to-day details so you can focus on what matters most.
+                    </p>
+                    <a href="#services" class="inline-block bg-custom-brown text-white text-lg font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-opacity-90 transition-transform transform hover:scale-105">
+                        Explore Services
+                    </a>
+                </div>
+                <div class="md:w-1/2">
+                    <!-- Placeholder image - replace with a real image of Kassandra later -->
+                    <img src="https://placehold.co/800x600/6B4E3E/FFFFFF?text=Professional+Assistant" alt="Kassie Harding working as a professional virtual assistant" class="w-full h-auto rounded-lg shadow-xl object-cover">
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold text-center text-custom-brown mb-16">
+                    Our Service Packages
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
+                    <!-- Starter Package Card -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-3xl font-bold text-custom-brown mb-2">Starter Package</h3>
+                        <p class="text-5xl font-extrabold text-gray-800 mb-4">$120<span class="text-2xl font-normal">/mo</span></p>
+                        <p class="text-gray-600 mb-6">Perfect for staying organized with light support.</p>
+                        <ul class="text-left text-gray-700 space-y-3 mb-8">
+                            <li>✓ 30-minute planning session each week</li>
+                            <li>✓ Plus task and calendar updates</li>
+                            <li>✓ Keep you on track</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto block bg-custom-brown text-white py-3 px-8 rounded-full font-semibold hover:bg-opacity-90">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Core Package Card -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-3xl font-bold text-custom-brown mb-2">Core Package</h3>
+                        <p class="text-5xl font-extrabold text-gray-800 mb-4">$220<span class="text-2xl font-normal">/mo</span></p>
+                        <p class="text-gray-600 mb-6">For consistent support that helps you manage your week smoothly.</p>
+                        <ul class="text-left text-gray-700 space-y-3 mb-8">
+                            <li>✓ 45-minute planning session</li>
+                            <li>✓ Active calendar management</li>
+                            <li>✓ Email or text check-ins</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto block bg-custom-brown text-white py-3 px-8 rounded-full font-semibold hover:bg-opacity-90">
+                            Get Started
+                        </a>
+                    </div>
+
+                    <!-- Premium Package Card -->
+                    <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col items-center text-center transition-transform transform hover:scale-105">
+                        <h3 class="text-3xl font-bold text-custom-brown mb-2">Premium Package</h3>
+                        <p class="text-5xl font-extrabold text-gray-800 mb-4">$320<span class="text-2xl font-normal">/mo</span></p>
+                        <p class="text-gray-600 mb-6">Full personal assistant service on a part-time basis.</p>
+                        <ul class="text-left text-gray-700 space-y-3 mb-8">
+                            <li>✓ All Core Package features</li>
+                            <li>✓ Appointment scheduling</li>
+                            <li>✓ Ongoing task management</li>
+                            <li>✓ Priority messaging support</li>
+                        </ul>
+                        <a href="#contact" class="mt-auto block bg-custom-brown text-white py-3 px-8 rounded-full font-semibold hover:bg-opacity-90">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How to Get Started Section -->
+        <section id="how-to" class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+            <div class="container mx-auto text-center">
+                <h2 class="text-4xl font-bold text-custom-brown mb-8">How To Get Started</h2>
+                <div class="flex flex-col md:flex-row items-center justify-center gap-10">
+                    <ol class="text-left text-lg space-y-4 max-w-lg">
+                        <li class="flex items-start">
+                            <span class="text-2xl font-bold text-custom-brown mr-4">1.</span>
+                            <div>
+                                <span class="font-semibold">Book your free 15-minute consultation.</span>
+                                <p class="text-gray-600">We'll discuss your needs and find the perfect plan for you.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl font-bold text-custom-brown mr-4">2.</span>
+                            <div>
+                                <span class="font-semibold">We discuss your needs and design your personalized plan.</span>
+                                <p class="text-gray-600">We'll tailor a plan that fits your unique schedule and goals.</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-2xl font-bold text-custom-brown mr-4">3.</span>
+                            <div>
+                                <span class="font-semibold">Enjoy having your tasks and calendar handled.</span>
+                                <p class="text-gray-600">Reclaim your time and focus on what's important to you!</p>
+                            </div>
+                        </li>
+                    </ol>
+                    <div class="relative w-full max-w-sm md:w-1/2">
+                        <!-- Placeholder for a phone image or a video of Kassandra -->
+                        <img src="https://placehold.co/400x600/9CA3AF/FFFFFF?text=Call+Now" alt="A phone with a call button" class="w-full h-auto rounded-lg shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gemini-powered Chat Section -->
+        <section id="gemini-chat" class="py-20 px-4 sm:px-6 lg:px-8 bg-gray-100">
+            <div class="container mx-auto max-w-3xl">
+                <h2 class="text-4xl font-bold text-center text-custom-brown mb-8">Ask Kassandra ✨</h2>
+                <p class="text-lg text-center text-gray-700 mb-12">
+                    Have a quick question about my services or need a small productivity tip? Ask me anything and I'll do my best to help!
+                </p>
+                <div class="bg-white rounded-xl shadow-lg p-6">
+                    <div id="chat-output" class="min-h-[100px] bg-gray-50 rounded-lg p-4 mb-4 text-gray-800 overflow-y-auto">
+                        <!-- Chat responses will be displayed here -->
+                        <p class="text-gray-500 italic">"How can a virtual assistant help me manage my calendar?"</p>
+                    </div>
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <textarea id="chat-input" class="flex-grow rounded-lg border border-gray-300 p-3 focus:outline-none focus:ring-2 focus:ring-custom-brown" rows="2" placeholder="Ask your question here..."></textarea>
+                        <button id="send-btn" class="bg-custom-brown text-white py-3 px-6 rounded-full font-semibold hover:bg-opacity-90 transition-colors">
+                            Send
+                        </button>
+                    </div>
+                    <div id="loading-indicator" class="hidden mt-4 loading-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20 px-4 sm:px-6 lg:px-8 bg-custom-brown text-white text-center">
+            <div class="container mx-auto">
+                <h2 class="text-4xl font-bold mb-4">Ready to get started?</h2>
+                <p class="text-lg mb-8 max-w-xl mx-auto">
+                    Let's connect and see how I can help you reclaim your time and get organized.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-6">
+                    <a href="mailto:Kassandraharding08@gmail.com" class="flex items-center gap-2 bg-white text-custom-brown py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+                        <!-- Email icon (placeholder) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                        <span>Kassandraharding08@gmail.com</span>
+                    </a>
+                    <a href="tel:603-418-4616" class="flex items-center gap-2 bg-white text-custom-brown py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+                        <!-- Phone icon (placeholder) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.26 1.13a11.042 11.042 0 005.516 5.516l1.13-2.26a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                        </svg>
+                        <span>603-418-4616</span>
+                    </a>
+                    <!-- ChatGPT link -->
+                    <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-white text-custom-brown py-3 px-6 rounded-full font-semibold hover:bg-gray-200 transition-colors">
+                        <!-- Link icon (placeholder) -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
+                        <span>chatgpt.com</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-gray-300 py-8 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Kassie Harding. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        const chatInput = document.getElementById('chat-input');
+        const sendBtn = document.getElementById('send-btn');
+        const chatOutput = document.getElementById('chat-output');
+        const loadingIndicator = document.getElementById('loading-indicator');
+
+        const chatHistory = [
+            {
+                role: "user",
+                parts: [{ text: "You are Kassandra Harding, a professional virtual assistant. Your expertise is in helping clients with calendar management, task organization, and general administrative support. Your tone is helpful, friendly, and professional. Always provide a concise and clear answer to the user's question, and try to relate it back to your services. For example, if a user asks about calendar management, explain how your services can help with that. If the question is outside of your expertise (e.g., about quantum physics), gently redirect by stating that you specialize in virtual assistance and can't answer that question, but you can help with things like scheduling and task management. Do not use markdown formatting in your response. Keep your answers brief and to the point." }]
+            }
+        ];
+
+        sendBtn.addEventListener('click', () => {
+            const userMessage = chatInput.value.trim();
+            if (userMessage) {
+                // Display the user's message
+                chatOutput.innerHTML += `<p class="text-gray-800 font-semibold mt-4">You:</p><p class="mt-2">${userMessage}</p>`;
+                chatInput.value = '';
+                
+                // Show loading indicator
+                loadingIndicator.classList.remove('hidden');
+
+                // Add user message to history
+                chatHistory.push({ role: "user", parts: [{ text: userMessage }] });
+                
+                // Send to Gemini API
+                const generateResponse = async () => {
+                    const payload = {
+                        contents: chatHistory,
+                        generationConfig: {
+                            responseMimeType: "application/json",
+                            responseSchema: {
+                                type: "OBJECT",
+                                properties: {
+                                    "answer": { "type": "STRING" }
+                                }
+                            }
+                        }
+                    };
+                    const apiKey = "";
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${apiKey}`;
+
+                    const fetchWithExponentialBackoff = async (url, options, retries = 5, delay = 1000) => {
+                        try {
+                            const response = await fetch(url, options);
+                            if (response.status === 429 && retries > 0) {
+                                await new Promise(resolve => setTimeout(resolve, delay));
+                                return fetchWithExponentialBackoff(url, options, retries - 1, delay * 2);
+                            }
+                            if (!response.ok) {
+                                throw new Error(`API error: ${response.statusText}`);
+                            }
+                            return response;
+                        } catch (error) {
+                            if (retries > 0) {
+                                await new Promise(resolve => setTimeout(resolve, delay));
+                                return fetchWithExponentialBackoff(url, options, retries - 1, delay * 2);
+                            }
+                            console.error('Failed to fetch:', error);
+                            return null;
+                        }
+                    };
+
+                    try {
+                        const response = await fetchWithExponentialBackoff(apiUrl, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(payload)
+                        });
+
+                        if (response) {
+                            const result = await response.json();
+                            if (result.candidates && result.candidates.length > 0 && result.candidates[0].content && result.candidates[0].content.parts && result.candidates[0].content.parts.length > 0) {
+                                const jsonText = result.candidates[0].content.parts[0].text;
+                                const parsedJson = JSON.parse(jsonText);
+                                const botAnswer = parsedJson.answer;
+                                
+                                // Display the AI's response
+                                chatOutput.innerHTML += `<p class="text-custom-brown font-semibold mt-4">Kassandra:</p><p class="mt-2">${botAnswer}</p>`;
+                                
+                                // Add AI message to history
+                                chatHistory.push({ role: "model", parts: [{ text: botAnswer }] });
+                            } else {
+                                chatOutput.innerHTML += `<p class="text-red-500 mt-4">Kassandra: I'm sorry, I couldn't generate a response at this time. Please try again later.</p>`;
+                            }
+                        } else {
+                            chatOutput.innerHTML += `<p class="text-red-500 mt-4">Kassandra: There was a problem connecting to the service. Please try again later.</p>`;
+                        }
+                    } catch (e) {
+                        console.error('Error parsing response or making API call:', e);
+                        chatOutput.innerHTML += `<p class="text-red-500 mt-4">Kassandra: An error occurred. Please try again later.</p>`;
+                    } finally {
+                        // Hide loading indicator
+                        loadingIndicator.classList.add('hidden');
+                        chatOutput.scrollTop = chatOutput.scrollHeight;
+                    }
+                };
+
+                generateResponse();
+            }
+        });
+    </script>
+
+</body>
+</html>
